@@ -1,6 +1,6 @@
 {
   "name": "razzle-plugin-bundle-analyzer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Razzle plugin to add webpack-bundle-analyzer",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
 	"homepage": "https://github.com/nimacsoft/razzle-plugin-bundle-analyzer#readme",
 	"dependencies": {
 		"webpack": "~4.0.0",
-		"webpack-bundle-analyzer": "~3.0.0"
+		"webpack-bundle-analyzer": ">=3.3.2"
 	}
 }
