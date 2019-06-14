@@ -46,7 +46,7 @@ Set `concatenateModules` to `true` if you want to webpack to find segments of th
 Craete a new **script** in *package.json* 
 
 ```json
-"analyze": "BUNDLE_ANALYZE=true razzle build",,
+"analyze": "BUNDLE_ANALYZE=true razzle build",
 ```
 
 and start by run this command in terminal
