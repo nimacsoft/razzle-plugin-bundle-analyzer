@@ -11,19 +11,19 @@
     "url": "git+https://github.com/nimacsoft/razzle-plugin-bundle-analyzer.git"
   },
   "keywords": [
-		"razzle",
-		"babel",
-		"plugin",
-		"webpack-bundle-analyzer"
+    "razzle",
+    "babel",
+    "plugin",
+    "webpack-bundle-analyzer"
   ],
   "author": "Nima Arefi <nimaarefi@outlook.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nimacsoft/razzle-plugin-bundle-analyzer/issues"
   },
-	"homepage": "https://github.com/nimacsoft/razzle-plugin-bundle-analyzer#readme",
-	"dependencies": {
-		"webpack": "~4.0.0",
-		"webpack-bundle-analyzer": ">=3.3.2"
-	}
+  "homepage": "https://github.com/nimacsoft/razzle-plugin-bundle-analyzer#readme",
+  "dependencies": {
+    "webpack": "~4.0.0",
+    "webpack-bundle-analyzer": ">=3.6.0"
+  }
 }

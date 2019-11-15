@@ -5,15 +5,20 @@ const defaultOptions = {
 function modify(baseConfig, { target, dev }, webpack, userOptions = {}) {
 	const options = Object.assign({}, defaultOptions, userOptions);
 	const config = Object.assign({}, baseConfig);
-	
+
 	if (process.env.BUNDLE_ANALYZE === "true" && target === "web") {
-		config.optimization.concatenateModules = options.concatenateModules
+		const {
+			concatenateModules,
+			...bundleAnalyzerOptions = {}
+		} = options
+
+		config.optimization.concatenateModules = concatenateModules
 		config.plugins.push(
-			new (require("webpack-bundle-analyzer")).BundleAnalyzerPlugin()
+			new (require("webpack-bundle-analyzer")).BundleAnalyzerPlugin(bundleAnalyzerOptions)
 		)
 	}
 
- return config;
+	return config;
 }
 
 module.exports = modify;

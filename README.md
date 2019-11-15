@@ -41,15 +41,35 @@ concatenateModules: *boolean* (defaults: false)
 
 Set `concatenateModules` to `true` if you want to webpack to find segments of the module graph which can be safely concatenated into a single module
 
+### Customizing
+You can also pass other [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) options in the options array. For example, to use this in Docker environments, you can set the `analyzerHost` to `0.0.0.0`.
+
+```javascript
+// razzle.config.js
+
+module.exports = {
+  plugins: [
+    {
+      name: 'bundle-analyzer',
+      options: {
+        analyzerHost: '0.0.0.0'
+      }
+    }
+  ]
+};
+```
+
+See the full list of possible options [here](https://github.com/webpack-contrib/webpack-bundle-analyzer#options-for-plugin)
+
 ## Run Bundle Analyzer
 
-Craete a new **script** in *package.json* 
+Craete a new **script** in *package.json*
 
 ```json
 "analyze": "BUNDLE_ANALYZE=true razzle build",
 ```
 
 and start by run this command in terminal
-```sh 
+```sh
 yarn analyze
-``` 
+```
