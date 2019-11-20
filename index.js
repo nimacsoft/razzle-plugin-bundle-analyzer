@@ -9,7 +9,7 @@ function modify(baseConfig, { target, dev }, webpack, userOptions = {}) {
 	if (process.env.BUNDLE_ANALYZE === "true" && target === "web") {
 		const {
 			concatenateModules,
-			...bundleAnalyzerOptions = {}
+			...bundleAnalyzerOptions
 		} = options
 
 		config.optimization.concatenateModules = concatenateModules
