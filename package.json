@@ -4,7 +4,8 @@
   "description": "Razzle plugin to add webpack-bundle-analyzer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node postinstall.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/nimacsoft/razzle-plugin-bundle-analyzer#readme",
   "dependencies": {
+    "print-message": "^3.0.1",
     "webpack": "~4.0.0",
     "webpack-bundle-analyzer": ">=3.6.0"
   }
