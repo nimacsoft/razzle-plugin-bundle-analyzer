@@ -1,6 +1,6 @@
 {
   "name": "razzle-plugin-bundle-analyzer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
@@ -789,17 +789,24 @@
       "integrity": "sha512-rHGwtpl67oih3xAHbZlpw5rQAt+YV1mSCu2fUZ9XNrfaGEhom7E+AUiMci+ByP4aSfuAWx7hE0BPuJLMrpXwOw=="
     },
     "elliptic": {
-      "version": "6.5.1",
-      "resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.5.1.tgz",
-      "integrity": "sha512-xvJINNLbTeWQjrl6X+7eQCrIy/YPv5XCpKW6kB5mKvtnGILoLDcySuwomfdzt0BMdLNVnuRNTuzKNHj0bva1Cg==",
+      "version": "6.5.4",
+      "resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.5.4.tgz",
+      "integrity": "sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==",
       "requires": {
-        "bn.js": "^4.4.0",
-        "brorand": "^1.0.1",
+        "bn.js": "^4.11.9",
+        "brorand": "^1.1.0",
         "hash.js": "^1.0.0",
-        "hmac-drbg": "^1.0.0",
-        "inherits": "^2.0.1",
-        "minimalistic-assert": "^1.0.0",
-        "minimalistic-crypto-utils": "^1.0.0"
+        "hmac-drbg": "^1.0.1",
+        "inherits": "^2.0.4",
+        "minimalistic-assert": "^1.0.1",
+        "minimalistic-crypto-utils": "^1.0.1"
+      },
+      "dependencies": {
+        "bn.js": {
+          "version": "4.12.0",
+          "resolved": "https://registry.npmjs.org/bn.js/-/bn.js-4.12.0.tgz",
+          "integrity": "sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA=="
+        }
       }
     },
     "emojis-list": {
@@ -1987,6 +1994,11 @@
       "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-6.0.2.tgz",
       "integrity": "sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA=="
     },
+    "kleur": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz",
+      "integrity": "sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w=="
+    },
     "loader-runner": {
       "version": "2.4.0",
       "resolved": "https://registry.npmjs.org/loader-runner/-/loader-runner-2.4.0.tgz",
@@ -2483,6 +2495,14 @@
       "version": "0.1.1",
       "resolved": "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz",
       "integrity": "sha1-AerA/jta9xoqbAL+q7jB/vfgDqs="
+    },
+    "print-message": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/print-message/-/print-message-3.0.1.tgz",
+      "integrity": "sha512-wsvsI08pLCPL+lHURVmlZ2KjXN/rLKNyeKN/r3FkXAX6ZByE8Fv8ZmvkQFqpdPdyfCPty3PzznrDda+E8DvN8Q==",
+      "requires": {
+        "kleur": "3.0.3"
+      }
     },
     "process": {
       "version": "0.11.10",
