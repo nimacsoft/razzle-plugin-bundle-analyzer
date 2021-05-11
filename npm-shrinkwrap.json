@@ -1,6 +1,6 @@
 {
   "name": "razzle-plugin-bundle-analyzer",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
@@ -1987,6 +1987,11 @@
       "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-6.0.2.tgz",
       "integrity": "sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA=="
     },
+    "kleur": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz",
+      "integrity": "sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w=="
+    },
     "loader-runner": {
       "version": "2.4.0",
       "resolved": "https://registry.npmjs.org/loader-runner/-/loader-runner-2.4.0.tgz",
@@ -2012,9 +2017,9 @@
       }
     },
     "lodash": {
-      "version": "4.17.15",
-      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.15.tgz",
-      "integrity": "sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A=="
+      "version": "4.17.21",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+      "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
     },
     "lru-cache": {
       "version": "4.1.5",
@@ -2483,6 +2488,14 @@
       "version": "0.1.1",
       "resolved": "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz",
       "integrity": "sha1-AerA/jta9xoqbAL+q7jB/vfgDqs="
+    },
+    "print-message": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/print-message/-/print-message-3.0.1.tgz",
+      "integrity": "sha512-wsvsI08pLCPL+lHURVmlZ2KjXN/rLKNyeKN/r3FkXAX6ZByE8Fv8ZmvkQFqpdPdyfCPty3PzznrDda+E8DvN8Q==",
+      "requires": {
+        "kleur": "3.0.3"
+      }
     },
     "process": {
       "version": "0.11.10",
