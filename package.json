@@ -25,7 +25,7 @@
   "homepage": "https://github.com/nimacsoft/razzle-plugin-bundle-analyzer#readme",
   "dependencies": {
     "print-message": "^3.0.1",
-    "webpack": "~4.0.0",
+    "webpack": "~5.75.0",
     "webpack-bundle-analyzer": ">=3.6.0"
   }
 }
